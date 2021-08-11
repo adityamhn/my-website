@@ -1,0 +1,48 @@
+.navbarContainer {
+    height: 64px;
+    background-color: #17181b;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.5s ease;
+
+    .wrapper {
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0rem 6rem;
+
+        .mainNav {
+            transition: all 0.3s ease;
+
+            .navLink {
+                margin-left: 4rem;
+                position: relative;
+                color: #e5e5e5;
+                text-decoration: none;
+                font-size: 1.1rem;
+                font-family: "BasisGrotesquePro";
+            }
+
+            .activeLink {
+                transition: all 0.3s ease;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: -6px;
+                    transform: translateX(-50%);
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: #e76f51;
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,24 @@
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url("/fonts/basis-grotesque-pro/BasisGrotesquePro-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "BasisGrotesquePro-light";
+  src: url("/fonts/basis-grotesque-pro/BasisGrotesquePro-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "BasisGrotesquePro-bold";
+  src: url("/fonts/basis-grotesque-pro/BasisGrotesquePro-Bold.ttf") format('truetype');
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
@@ -13,4 +28,8 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "BasisGrotesquePro";
 }
+
+
+
