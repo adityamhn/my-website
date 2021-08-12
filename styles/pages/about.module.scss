@@ -1,0 +1,60 @@
+.aboutContainer {
+    background: #17181b;
+    min-height: 100vh;
+    padding-top: 64px;
+
+    .aboutWrapper {
+        padding: 0rem 5rem;
+
+
+        .about1 {
+            color: #f3f3f3;
+            padding-top: 6rem;
+            font-size: 2.2rem;
+
+        }
+
+        .about2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 10rem 0rem;
+
+            .text2 {
+                width: 50%;
+                font-size: 1.4rem;
+                color: #bdbdbd;
+
+            }
+        }
+
+        .techSkills {
+
+            .skillsHeading {
+                font-size: 2.2rem;
+                color: #f3f3f3;
+                margin-bottom: 2rem;
+
+            }
+
+            .skills {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .skillBlock {
+                    margin-right: 4rem;
+
+
+                    .skill {
+                        font-size: 1.8rem;
+                        color: #e5e5e5;
+                        font-family: "BasisGrotesquePro-light";
+                        margin-top: 2rem;
+
+                    }
+                }
+            }
+        }
+    }
+}

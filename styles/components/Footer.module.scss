@@ -1,0 +1,56 @@
+.footerContainer {
+    background: #17181b;
+
+    .footerWrapper {
+        padding: 18rem 5rem 5rem 5rem;
+
+        .mailInfo {
+            display: flex;
+            flex-direction: column;
+
+            .text {
+                color: #e5e5e5;
+                font-size: 1.2rem;
+                font-family: "BasisGrotesquePro-light";
+                line-height: 0;
+            }
+
+            .mail {
+                font-size: 3rem;
+                color: #f3f3f3;
+                cursor: pointer;
+            }
+        }
+
+        .otherLinks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-top: 8rem;
+
+            .socials {
+                display: flex;
+                flex-direction: column;
+
+                .socialLink {
+                    color: #e5e5e5;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+
+            .linksSec {
+                display: flex;
+                flex-direction: column;
+
+                .footLink {
+                    color: #e5e5e5;
+                    font-size: 2rem;
+                    text-align: right;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

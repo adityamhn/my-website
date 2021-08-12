@@ -88,7 +88,54 @@
             }
         }
 
+        .infoSec {
+            padding-top: 15rem;
+            align-items: center;
 
-        
+            .info1 {
+                .heading {
+                    color: #f3f3f3;
+                    font-size: 2.5rem;
+                    display: flex;
+                    align-items: center;
+                    font-family: "BasisGrotesquePro-bold";
+                    margin: 0;
+
+                    .rectangle,
+                    .triangle {
+                        margin: 0 1rem;
+                    }
+                }
+
+                .infoText {
+                    padding: 1rem 0rem;
+
+                    .text {
+                        color: #e5e5e5;
+                        font-size: 1.3rem;
+                        padding: 0.6rem 0rem;
+                    }
+                }
+            }
+
+            .info2 {
+                font-size: 3rem;
+                font-family: "BasisGrotesquePro-bold";
+                color: #f3f3f3;
+                line-height: 130%;
+            }
+
+            .aboutBtn {
+                text-align: center;
+                color: #e5e5e5;
+                font-size: 1.4rem;
+                padding-top: 6rem;
+                cursor: pointer;
+
+                .icon {
+                    margin-left: 1rem;
+                }
+            }
+        }
     }
 }
