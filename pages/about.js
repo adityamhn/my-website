@@ -18,18 +18,18 @@ const About = () => {
           </p>
           <div className={Styles.about2}>
             <p className={Styles.text2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac placerat lacus. Nunc vitae tempor ligula. Sed volutpat tempus placerat.
+            I started out web development in 2019 as fun but really loved it. Since then, i started building websites and also learned web design.
             </p>
             <p className={Styles.text2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac placerat lacus. Nunc vitae tempor ligula. Sed volutpat tempus placerat.
+            Through the years of learning web development and design i found that visually clean and minimal websites tend to gain more trust from users than a complex website with no interactivity.
             </p>
             <p className={Styles.text2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac placerat lacus. Nunc vitae tempor ligula. Sed volutpat tempus placerat.
+            Adding interactive functionality to the websites with a minimal and clean design is my key to building websites with great user experience.
             </p>
           </div>
           <div className={Styles.techSkills}>
             <h5 className={Styles.skillsHeading}>
-              Tools and Tech that I use
+              Tools & Tech that I use
             </h5>
             <div className={Styles.skills}>
               <div className={Styles.skillBlock}>

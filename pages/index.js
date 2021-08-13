@@ -5,10 +5,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import Footer from "../components/Footer"
+import { useEffect, useRef } from "react"
 
 
 
 const Home = () => {
+
+
   return (
     <div>
       <Head>
@@ -37,15 +40,27 @@ const Home = () => {
               <Row className={Styles.project}>
                 <Col sm={8} className={Styles.block1}>
                   <div className={Styles.project1}>
-                    <Image src={"/images/rect.svg"} className={Styles.previewimg1} alt="Project-1" layout="fill" objectFit="cover" />
+                    <Image src={"/images/bugbase/main.svg"} className={Styles.previewimg1} alt="Project-1" width={"100%"} height={75} layout="responsive" objectFit="cover" />
+                    <div className={Styles.projectDetails} >
+                      <div className={Styles.proName}>Bugbase</div>
+                      <div className={Styles.typeOfWork}>Web development</div>
+                    </div>
                   </div>
                 </Col>
                 <Col sm={4} className={Styles.block2}>
                   <div className={Styles.project2}>
-                    <Image src={"/images/rect.svg"} className={Styles.previewimg2} alt="Project-2" layout="fill" objectFit="cover" />
+                    <Image src={"/images/kryptocards/main.svg"} className={Styles.previewimg2} alt="Project-2" width={"100%"} height={75} layout="responsive" objectFit="cover" />
+                    <div className={Styles.projectDetails} >
+                      <div className={Styles.proName}>Kryptocards</div>
+                      <div className={Styles.typeOfWork}>Web development</div>
+                    </div>
                   </div>
                   <div className={Styles.project3}>
-                    <Image src={"/images/rect.svg"} className={Styles.previewimg3} alt="Project-3" layout="fill" objectFit="cover" />
+                    <Image src={"/images/examtantra/main.jpg"} className={Styles.previewimg3} alt="Project-3" width={"100%"} height={75} layout="responsive" objectFit="cover" />
+                    <div className={Styles.projectDetails} >
+                      <div className={Styles.proName}>Exam tantra</div>
+                      <div className={Styles.typeOfWork}>App development</div>
+                    </div>
                   </div>
                 </Col>
               </Row>
@@ -69,13 +84,13 @@ const Home = () => {
                 Develop</h5>
               <div className={Styles.infoText}>
                 <div className={Styles.text}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac placerat lacus. Nunc vitae tempor ligula. Sed volutpat tempus placerat.
+                I am a web developer and UI/UX designer working from Visakhapatnam, India. I am also the CTO of Bugbase.
                 </div>
                 <div className={Styles.text}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac placerat lacus. Nunc vitae tempor ligula. Sed volutpat tempus placerat.
+                I love to create great experiences for the user making sure they have seamless interactivity with the digital world.
                 </div>
                 <div className={Styles.text}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac placerat lacus. Nunc vitae tempor ligula. Sed volutpat tempus placerat.
+                I am currently a college student open to freelance work. Feel free to contact me. 😌
                 </div>
               </div>
             </Col>
@@ -94,3 +109,5 @@ const Home = () => {
 }
 
 export default Home
+
+
