@@ -1,5 +1,7 @@
 import { Container } from "react-bootstrap"
 import Styles from '../styles/components/Footer.module.scss'
+import ActiveLink from './ActiveLink'
+
 
 const Footer = () => {
     return (
@@ -9,20 +11,28 @@ const Footer = () => {
                     <div className={Styles.text}>
                         Send me a hello.
                     </div>
-                    <div className={Styles.mail}>
+                    <a href="mailto:aditya530026@gmail.com" className={Styles.mail}>
                         aditya530026@gmail.com
-                    </div>
+                    </a>
                 </div>
                 <div className={Styles.otherLinks}>
                     <div className={Styles.socials}>
-                        <div className={Styles.socialLink}>LinkedIn</div>
-                        <div className={Styles.socialLink}>Instagram</div>
+                        <a href="https://www.linkedin.com/in/aditya-mohan-6a506b1b2/" target="_blank" className={Styles.socialLink}>LinkedIn</a>
+                        <a href="https://www.instagram.com/aditya_peela/" target="_blank" className={Styles.socialLink}>Instagram</a>
                     </div>
                     <div className={Styles.linksSec}>
-                        <div className={Styles.footLink}>Home</div>
-                        <div className={Styles.footLink}>Work</div>
-                        <div className={Styles.footLink}>About</div>
-                        <div className={Styles.footLink}>Contact</div>
+                        <ActiveLink href="/" activeClassName={Styles.activeFootLink}>
+                        <a className={Styles.footLink}>Home</a>
+                        </ActiveLink>
+                        <ActiveLink href="/work" activeClassName={Styles.activeFootLink}>
+                        <a className={Styles.footLink}>Work</a>
+                        </ActiveLink>
+                        <ActiveLink href="/about" activeClassName={Styles.activeFootLink}>
+                        <a className={Styles.footLink}>About</a>
+                        </ActiveLink>
+                        <ActiveLink href="/contact" activeClassName={Styles.activeFootLink}>
+                        <a className={Styles.footLink}>Contact</a>
+                        </ActiveLink>
                     </div>
                 </div>
             </div>

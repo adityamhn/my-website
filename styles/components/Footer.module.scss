@@ -19,6 +19,7 @@
                 font-size: 3rem;
                 color: #f3f3f3;
                 cursor: pointer;
+                text-decoration: none;
             }
         }
 
@@ -37,6 +38,7 @@
                     color: #e5e5e5;
                     font-size: 2rem;
                     cursor: pointer;
+                    text-decoration: none;
                 }
             }
 
@@ -49,6 +51,11 @@
                     font-size: 2rem;
                     text-align: right;
                     cursor: pointer;
+                    text-decoration: none;
+                }
+
+                .activeFootLink {
+                    font-weight: bold;
                 }
             }
         }

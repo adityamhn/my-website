@@ -5,11 +5,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import Footer from "../components/Footer"
-import { useEffect, useRef } from "react"
-
+import Link from 'next/link'
+import { useRouter } from "next/router"
 
 
 const Home = () => {
+  const router = useRouter()
 
 
   return (
@@ -39,7 +40,7 @@ const Home = () => {
             <div className={Styles.allWorks}>
               <Row className={Styles.project}>
                 <Col sm={8} className={Styles.block1}>
-                  <div className={Styles.project1}>
+                  <div onClick={() => router.push('/work/bugbase')} className={Styles.project1}>
                     <Image src={"/images/bugbase/main.svg"} className={Styles.previewimg1} alt="Project-1" width={"100%"} height={75} layout="responsive" objectFit="cover" />
                     <div className={Styles.projectDetails} >
                       <div className={Styles.proName}>Bugbase</div>
@@ -48,14 +49,14 @@ const Home = () => {
                   </div>
                 </Col>
                 <Col sm={4} className={Styles.block2}>
-                  <div className={Styles.project2}>
+                  <div onClick={() => router.push('/work/kryptocards')} className={Styles.project2}>
                     <Image src={"/images/kryptocards/main.svg"} className={Styles.previewimg2} alt="Project-2" width={"100%"} height={75} layout="responsive" objectFit="cover" />
                     <div className={Styles.projectDetails} >
                       <div className={Styles.proName}>Kryptocards</div>
                       <div className={Styles.typeOfWork}>Web development</div>
                     </div>
                   </div>
-                  <div className={Styles.project3}>
+                  <div onClick={() => router.push('/work/examtantra')} className={Styles.project3}>
                     <Image src={"/images/examtantra/main.jpg"} className={Styles.previewimg3} alt="Project-3" width={"100%"} height={75} layout="responsive" objectFit="cover" />
                     <div className={Styles.projectDetails} >
                       <div className={Styles.proName}>Exam tantra</div>
@@ -65,6 +66,9 @@ const Home = () => {
                 </Col>
               </Row>
             </div>
+            <Link href="/work">
+            <div className={Styles.viewMoreBtn}>View more</div>
+            </Link>
           </div>
 
 
@@ -84,20 +88,22 @@ const Home = () => {
                 Develop</h5>
               <div className={Styles.infoText}>
                 <div className={Styles.text}>
-                I am a web developer and UI/UX designer working from Visakhapatnam, India. I am also the CTO of Bugbase.
+                  I am a web developer and UI/UX designer working from Visakhapatnam, India. I am also the CTO of Bugbase.
                 </div>
                 <div className={Styles.text}>
-                I love to create great experiences for the user making sure they have seamless interactivity with the digital world.
+                  I love to create great experiences for the user making sure they have seamless interactivity with the digital world.
                 </div>
                 <div className={Styles.text}>
-                I am currently a college student open to freelance work. Feel free to contact me. 😌
+                  I am currently a college student open to freelance work. Feel free to contact me. 😌
                 </div>
               </div>
             </Col>
             <Col xs={3} className={Styles.info2}>
               I love to create something simple and clean
             </Col>
+            <Link href="/about">
             <div className={Styles.aboutBtn}>About me <AiOutlineArrowRight className={Styles.icon} /></div>
+            </Link>
           </Row>
 
 

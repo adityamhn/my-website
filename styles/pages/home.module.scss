@@ -31,6 +31,9 @@
         }
 
         .featureSec {
+            display: flex;
+            flex-direction:column;
+
             .featureHead {
                 color: #f3f3f3;
                 font-size: 1.6rem;
@@ -52,7 +55,7 @@
                                 padding-right: 3px !important;
                                 object-fit: cover;
                                 cursor: pointer;
-                                transition:all 0.5s ease;
+                                transition: all 0.5s ease;
                             }
 
                             .projectDetails {
@@ -69,8 +72,7 @@
                                 background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
                                 cursor: pointer;
                                 opacity: 0;
-                                transition:all 0.3s ease;
-                                
+                                transition: all 0.5s ease;
 
                                 .proName {
                                     font-size: 3rem;
@@ -87,12 +89,6 @@
                             &:hover {
                                 .projectDetails {
                                     opacity: 1;
-
-                                }
-
-                                .previewimg1 {
-                                    transform: scale(1.1);
-
                                 }
                             }
                         }
@@ -109,11 +105,10 @@
                             .previewimg2 {
                                 padding-bottom: 3px !important;
                                 padding-left: 3px !important;
-                                transition:all 0.5s ease;
+                                transition: all 0.5s ease;
                                 object-fit: cover;
                                 cursor: pointer;
                             }
-
 
                             .projectDetails {
                                 position: absolute;
@@ -129,8 +124,7 @@
                                 background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
                                 cursor: pointer;
                                 opacity: 0;
-                                transition:all 0.3s ease;
-                                
+                                transition: all 0.5s ease;
 
                                 .proName {
                                     font-size: 1.5rem;
@@ -147,10 +141,6 @@
                             &:hover {
                                 .projectDetails {
                                     opacity: 1;
-                                }
-
-                                .previewimg2 {
-                                    transform: scale(1.1);
                                 }
                             }
                         }
@@ -163,11 +153,10 @@
                             .previewimg3 {
                                 padding-top: 3px !important;
                                 padding-left: 3px !important;
-                                transition:all 0.5s ease;
+                                transition: all 0.5s ease;
                                 object-fit: cover;
                                 cursor: pointer;
                             }
-
 
                             .projectDetails {
                                 position: absolute;
@@ -183,8 +172,7 @@
                                 background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
                                 cursor: pointer;
                                 opacity: 0;
-                                transition:all 0.3s ease;
-                                
+                                transition: all 0.5s ease;
 
                                 .proName {
                                     font-size: 1.5rem;
@@ -202,14 +190,20 @@
                                 .projectDetails {
                                     opacity: 1;
                                 }
-
-                                .previewimg3 {
-                                    transform: scale(1.1);
-                                }
                             }
                         }
                     }
                 }
+            }
+
+
+            .viewMoreBtn {
+                color: #f3f3f3;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                align-self: flex-end;
+
             }
         }
 

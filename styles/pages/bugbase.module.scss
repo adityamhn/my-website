@@ -1,0 +1,80 @@
+.bugbaseContainer {
+    background: #17181b;
+    min-height: 100vh;
+    padding-top: 64px;
+
+    .wrapper {
+        padding: 0rem 5rem;
+
+        .introduction {
+            color: #f3f3f3;
+            padding-top: 6rem;
+            font-size: 2.2rem;
+        }
+
+        .introPicSec {
+            padding-top: 8rem;
+
+            .introPic {
+                width: 100% !important;
+                height: 44rem !important;
+            }
+        }
+
+        .startInformationSec {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 8rem;
+
+            .linkAndDate {
+                display: flex;
+                flex-direction: column;
+
+                .linkSec {
+                    padding: 1rem 0rem;
+                    .link {
+                        color: #f3f3f3;
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                    }
+
+                    .webText {
+                        color: #bdbdbd;
+                    }
+                }
+            }
+
+            .startInfo {
+                width: 60%;
+                font-size: 1.25rem;
+                color: #e5e5e5;
+            }
+        }
+
+        .image2Sec {
+            padding-top: 8rem;
+
+            .image2 {
+            }
+        }
+
+        .info2Sec {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 8rem;
+
+            .info2 {
+                width: 60%;
+                font-size: 1.25rem;
+                color: #bdbdbd;
+
+                .info2Title {
+                    padding-bottom: 1.7rem;
+                    color:#e5e5e5;
+                }
+            }
+        }
+    }
+}
