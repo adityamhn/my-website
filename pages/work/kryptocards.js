@@ -4,15 +4,19 @@ import Navbar from "../../components/Navbar"
 import Styles from '../../styles/pages/bugbase.module.scss'
 import ReactPlayer from 'react-player/youtube'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Kryptocards = () => {
     return (
         <div>
+            <Head>
+                <title>Kryptocards | Aditya Mohan</title>
+            </Head>
             <Navbar />
             <Container fluid className={Styles.bugbaseContainer}>
                 <div className={Styles.wrapper}>
                     <div className={Styles.introduction}>
-                        Kryptocards is a ethereum based NFT platform that sells unique digital NFT's.
+                        Kryptocards is a ethereum based NFT platform that sells unique digital NFTs.
                     </div>
                     <div className={Styles.introPicSec}>
                         <ReactPlayer
@@ -25,7 +29,7 @@ const Kryptocards = () => {
                     <div className={Styles.startInformationSec}>
                         <div className={Styles.linkAndDate}>
                             <div className={Styles.linkSec}>
-                                <a href="https://kryptocards.tech" target="_blank" className={Styles.link}>https://kryptocards.tech</a>
+                                <a href="https://kryptocards.tech" target="_blank" rel="noreferrer" className={Styles.link}>{"https://kryptocards.tech"}</a>
                                 <div className={Styles.webText}>website</div>
                             </div>
                             <div className={Styles.linkSec}>

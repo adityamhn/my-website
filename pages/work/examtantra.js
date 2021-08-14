@@ -4,25 +4,29 @@ import Navbar from "../../components/Navbar"
 import Styles from '../../styles/pages/bugbase.module.scss'
 import ReactPlayer from 'react-player/youtube'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Examtantra = () => {
     return (
         <div>
+            <Head>
+                <title>ExamTantra | Aditya Mohan</title>
+            </Head>
             <Navbar />
             <Container fluid className={Styles.bugbaseContainer}>
                 <div className={Styles.wrapper}>
                     <div className={Styles.introduction}>
-                        ExamTantra is a platform that "Gamify" the mundane tasks of attempting exams. 
+                        ExamTantra is a platform that Gamify the mundane tasks of attempting exams.
                     </div>
                     <div className={Styles.introPicSec}>
-                    
+
                         <Image src={'/images/examtantra/logo.svg'} className={Styles.introPic} width={"100%"} height={62} objectFit="cover" layout="responsive" />
 
                     </div>
                     <div className={Styles.startInformationSec}>
                         <div className={Styles.linkAndDate}>
                             <div className={Styles.linkSec}>
-                                <a href="https://devfolio.co/submissions/examtantra-27f5" target="_blank" className={Styles.link}>https://devfolio.co/submissions/examtantra-27f5</a>
+                                <a href="https://devfolio.co/submissions/examtantra-27f5" target="_blank" rel="noreferrer" className={Styles.link}>{"https://devfolio.co/submissions/examtantra-27f5"}</a>
                                 <div className={Styles.webText}>website</div>
                             </div>
                             <div className={Styles.linkSec}>

@@ -3,10 +3,16 @@ import Styles from '../styles/pages/about.module.scss'
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Head from 'next/head'
+import { motion } from "framer-motion"
 
 const About = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 2 }}
+    >
       <Head>
         <title>About | Aditya Mohan</title>
       </Head>
@@ -18,13 +24,13 @@ const About = () => {
           </p>
           <div className={Styles.about2}>
             <p className={Styles.text2}>
-            I started out web development in 2019 as fun but really loved it. Since then, i started building websites and also learned web design.
+              I started out web development in 2019 as fun but really loved it. Since then, i started building websites and also learned web design.
             </p>
             <p className={Styles.text2}>
-            Through the years of learning web development and design i found that visually clean and minimal websites tend to gain more trust from users than a complex website with no interactivity.
+              Through the years of learning web development and design i found that visually clean and minimal websites tend to gain more trust from users than a complex website with no interactivity.
             </p>
             <p className={Styles.text2}>
-            Adding interactive functionality to the websites with a minimal and clean design is my key to building websites with great user experience.
+              Adding interactive functionality to the websites with a minimal and clean design is my key to building websites with great user experience.
             </p>
           </div>
           <div className={Styles.techSkills}>
@@ -61,7 +67,7 @@ const About = () => {
         </div>
       </Container>
       <Footer />
-    </div>
+    </motion.div>
   )
 }
 

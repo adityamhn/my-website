@@ -4,10 +4,14 @@ import Navbar from "../../components/Navbar"
 import Styles from '../../styles/pages/bugbase.module.scss'
 import ReactPlayer from 'react-player/youtube'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Bugbase = () => {
     return (
         <div>
+            <Head>
+                <title>Bugbase | Aditya Mohan</title>
+            </Head>
             <Navbar />
             <Container fluid className={Styles.bugbaseContainer}>
                 <div className={Styles.wrapper}>
@@ -25,7 +29,7 @@ const Bugbase = () => {
                     <div className={Styles.startInformationSec}>
                         <div className={Styles.linkAndDate}>
                             <div className={Styles.linkSec}>
-                                <a href="https://bugbase.in" target="_blank" className={Styles.link}>https://bugbase.in</a>
+                                <a href="https://bugbase.in" target="_blank" rel="noreferrer" className={Styles.link}>{"https://bugbase.in"}</a>
                                 <div className={Styles.webText}>website</div>
                             </div>
                             <div className={Styles.linkSec}>
@@ -47,7 +51,7 @@ const Bugbase = () => {
                         <div className={Styles.info2}>
                             <h5 className={Styles.info2Title}>My Role</h5>
                             <p className="m-0">
-                                Bugbase is a platform for companies to setup bug bounty programs. Bug bounty programs are a way to crowdsource identifying potential threats on websites, thus safeguarding the web for future users. We provide a clean and straightforward User Experience to engage more cybersecurity fanatics. Despite being a giant in the tech world, several Indian companies, private and government-run are still not secure and frequently experience security breaches. BugBase also provides organizations with the ability to host Capture The Flag (CTFs) events for cybersecurity novices to practice, learn and grow into professionals.
+                                I am the CTO ( Chief technology officer) of BugBase and I am responsible for technical development of BugBase. I majorly worked on developing the frontend of the website and introducing the best practices to BugBase. BugBase was entirely built using Nodejs and express for backend and Reactjs for frontend. The frontend interacts with backend using axios via a REST API. The user sessions are stored in redis and images on AWS S3 buckets. We are using Mongodb as our database.
                             </p>
                         </div>
                     </div>
