@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap"
 import Styles from '../styles/components/Footer.module.scss'
-import ActiveLink from './ActiveLink'
+import Link from 'next/link'
 
 
 const Footer = () => {
@@ -21,18 +21,18 @@ const Footer = () => {
                         <a href="https://www.instagram.com/aditya_peela/" target="_blank" rel="noreferrer" className={Styles.socialLink}>Instagram</a>
                     </div>
                     <div className={Styles.linksSec}>
-                        <ActiveLink href="/" activeClassName={Styles.activeFootLink}>
+                        <Link href="/">
                         <a className={Styles.footLink}>Home</a>
-                        </ActiveLink>
-                        <ActiveLink href="/work" activeClassName={Styles.activeFootLink}>
+                        </Link>
+                        <Link href="/work">
                         <a className={Styles.footLink}>Work</a>
-                        </ActiveLink>
-                        <ActiveLink href="/about" activeClassName={Styles.activeFootLink}>
+                        </Link>
+                        <Link href="/about">
                         <a className={Styles.footLink}>About</a>
-                        </ActiveLink>
-                        <ActiveLink href="/contact" activeClassName={Styles.activeFootLink}>
+                        </Link>
+                        <Link href="/contact">
                         <a className={Styles.footLink}>Contact</a>
-                        </ActiveLink>
+                        </Link>
                     </div>
                 </div>
             </div>

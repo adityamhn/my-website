@@ -5,10 +5,16 @@ import Styles from '../../styles/pages/bugbase.module.scss'
 import ReactPlayer from 'react-player/youtube'
 import Image from 'next/image'
 import Head from 'next/head'
+import { motion } from "framer-motion"
 
 const Bugbase = () => {
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+        >
             <Head>
                 <title>Bugbase | Aditya Mohan</title>
             </Head>
@@ -61,7 +67,7 @@ const Bugbase = () => {
                 </div>
             </Container>
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 

@@ -10,16 +10,18 @@ import { useRouter } from "next/router"
 import { motion } from "framer-motion"
 
 
+
 const Home = () => {
   const router = useRouter()
 
 
   return (
-    <motion.div initial={{ opacity: 0 }}
+    <motion.div
+      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 2 }}
-      >
+      transition={{ duration: 1 }}
+    >
       <Head>
         <title>Aditya Mohan</title>
       </Head>

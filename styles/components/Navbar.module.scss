@@ -29,9 +29,9 @@
             }
 
             .activeLink {
-                transition: all 0.3s ease;
-
+                
                 &::before {
+                    animation: fade 1s linear;
                     content: "";
                     position: absolute;
                     left: 50%;
@@ -44,5 +44,14 @@
                 }
             }
         }
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

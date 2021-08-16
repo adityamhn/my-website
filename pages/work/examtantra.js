@@ -2,13 +2,18 @@ import { Container } from "react-bootstrap"
 import Footer from "../../components/Footer"
 import Navbar from "../../components/Navbar"
 import Styles from '../../styles/pages/bugbase.module.scss'
-import ReactPlayer from 'react-player/youtube'
 import Image from 'next/image'
 import Head from 'next/head'
+import { motion } from "framer-motion"
 
 const Examtantra = () => {
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+        >
             <Head>
                 <title>ExamTantra | Aditya Mohan</title>
             </Head>
@@ -16,7 +21,7 @@ const Examtantra = () => {
             <Container fluid className={Styles.bugbaseContainer}>
                 <div className={Styles.wrapper}>
                     <div className={Styles.introduction}>
-                        ExamTantra is a platform that Gamify the mundane tasks of attempting exams.
+                        ExamTantra is a platform that Gamify the mundane tasks of attempting exams by bringing more productive practice environment to the students.
                     </div>
                     <div className={Styles.introPicSec}>
 
@@ -36,9 +41,11 @@ const Examtantra = () => {
                         </div>
                         <div className={Styles.startInfo}>
                             <p className="m-0">
-                                Bugbase is a platform for companies to setup bug bounty programs. Bug bounty programs are a way to crowdsource identifying potential threats on websites, thus safeguarding the web for future users. We provide a clean and straightforward User Experience to engage more cybersecurity fanatics. Despite being a giant in the tech world, several Indian companies, private and government-run are still not secure and frequently experience security breaches. BugBase also provides organizations with the ability to host Capture The Flag (CTFs) events for cybersecurity novices to practice, learn and grow into professionals.
+                                Competitive exams are a cornerstone in almost every student’s life. However the archaic education system makes the preparation process very tedious, boring and unintuitive. This leads to burnout and a general disinterest towards academics. This system is also inefficient as it doesn’t have room for a dynamic system of preparation.
                             </p>
-
+                            <p className="pt-4">
+                                ExamTantra’s “Gamifies” this mundane tasks of attempting exams by adding elements such as peer attempts: solving papers with peers resulting in a more productive practice environment, leaderboards to compare progress, a clean minimal UI so as to not distract the user, badges, awards and other reinforcements which have been proven to be psychological motivators.
+                            </p>
                         </div>
                     </div>
                     <div className={Styles.image2Sec}>
@@ -48,7 +55,7 @@ const Examtantra = () => {
                         <div className={Styles.info2}>
                             <h5 className={Styles.info2Title}>My Role</h5>
                             <p className="m-0">
-                                Bugbase is a platform for companies to setup bug bounty programs. Bug bounty programs are a way to crowdsource identifying potential threats on websites, thus safeguarding the web for future users. We provide a clean and straightforward User Experience to engage more cybersecurity fanatics. Despite being a giant in the tech world, several Indian companies, private and government-run are still not secure and frequently experience security breaches. BugBase also provides organizations with the ability to host Capture The Flag (CTFs) events for cybersecurity novices to practice, learn and grow into professionals.
+                            ExamTantra was a project we made for a hackathon where we won the first runner-up. The entire team was working together for the first time, so we did not have a common tech stack. We decided to try out something completely new to all of us, ie. Ionic with React as the frontend. I was one most familiar with React at the time, so I mostly worked on building the frontend of the App. We decided to go with firebase cloud functions as the backend since we had a time restriction to submit the project.
                             </p>
                         </div>
                     </div>
@@ -64,7 +71,7 @@ const Examtantra = () => {
                 </div>
             </Container>
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 

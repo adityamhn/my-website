@@ -1,10 +1,12 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Head from "next/head";
+import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps,router }) {
   return (<>
-    <Component {...pageProps} />
+    <AnimatePresence exitBeforeEnter>
+      <Component key={router.route} {...pageProps} />
+    </AnimatePresence>
   </>
   )
 }
