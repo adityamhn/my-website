@@ -8,6 +8,8 @@ import Head from 'next/head'
 import { motion } from "framer-motion"
 
 const Kryptocards = () => {
+
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -25,12 +27,8 @@ const Kryptocards = () => {
                         Kryptocards is a ethereum based NFT platform that sells unique digital NFTs.
                     </div>
                     <div className={Styles.introPicSec}>
-                        <ReactPlayer
-                            url="https://www.youtube.com/watch?v=4kWZn4xY2hI"
-                            className={Styles.introPic}
-                            playing={true} muted={true}
-                            controls={true}
-                        />
+                    <Image src={'/images/kryptocards/main.svg'} className={Styles.introPic} width={"100%"} height={62} objectFit="cover" layout="responsive" />
+
                     </div>
                     <div className={Styles.startInformationSec}>
                         <div className={Styles.linkAndDate}>
@@ -45,24 +43,35 @@ const Kryptocards = () => {
                         </div>
                         <div className={Styles.startInfo}>
                             <p className="m-0">
-                                Bugbase is a platform for companies to setup bug bounty programs. Bug bounty programs are a way to crowdsource identifying potential threats on websites, thus safeguarding the web for future users. We provide a clean and straightforward User Experience to engage more cybersecurity fanatics. Despite being a giant in the tech world, several Indian companies, private and government-run are still not secure and frequently experience security breaches. BugBase also provides organizations with the ability to host Capture The Flag (CTFs) events for cybersecurity novices to practice, learn and grow into professionals.
+                                Krypto Cards puts on display collectible cards in the form of NFTs for you to buy. We are revolutionising the legacy of collecting physical cards into a digital one which will awaken the fan within you. Krypto Cards is one of the very first Ethereum based NFT platform in India. Krypto Cards ties up with renowned artist and sell thier NFTs on the ethereum blockchain.
                             </p>
 
                         </div>
                     </div>
                     <div className={Styles.image2Sec}>
-                        <Image src={'/images/kryptocards/main.svg'} className={Styles.image2} width={"100%"} height={62} objectFit="cover" layout="responsive" />
+                        <Image src={'/images/kryptocards/landing.svg'} className={Styles.image2} width={"100%"} height={62} objectFit="cover" layout="responsive" />
                     </div>
                     <div className={Styles.info2Sec}>
                         <div className={Styles.info2}>
                             <h5 className={Styles.info2Title}>My Role</h5>
                             <p className="m-0">
-                                Bugbase is a platform for companies to setup bug bounty programs. Bug bounty programs are a way to crowdsource identifying potential threats on websites, thus safeguarding the web for future users. We provide a clean and straightforward User Experience to engage more cybersecurity fanatics. Despite being a giant in the tech world, several Indian companies, private and government-run are still not secure and frequently experience security breaches. BugBase also provides organizations with the ability to host Capture The Flag (CTFs) events for cybersecurity novices to practice, learn and grow into professionals.
+                                I am the Chief technology officer ( CTO ) of KryptoCards maintaining the website and other technical work of Kryptocards. My major work was to Research, wireframe, design and build the website. Kryptocards is built using Nodejs and React for backend and frontend respectively and also has its own smart contract.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={Styles.info2Sec}>
+                        <div className={Styles.info2}>
+                            <h5 className={Styles.info2Title}>Research, Design and Insights</h5>
+                            <p className="m-0">
+                                In the Research Phase, I went through all the needs that the website needs to fulfill and defined a problem statement. Then, I started researching on the target audience and since most of our audience are NFT enthusiasts and art lovers, I decided to go with a clean, minimal and visually pleasing design. I tried different color palettes with good color contrasts. 
+                            </p>
+                            <p className="mt-4">
+                                Then I focused on branding and logo design, tried different types of logos and finally decided upon one after having a good discussion with the team. Then I created my workspace and started working on the wireframes and develpoing visual mockups.
                             </p>
                         </div>
                     </div>
                     <div className={Styles.image2Sec}>
-                        <Image src={'/images/bugbase/main.svg'} className={Styles.image2} width={"100%"} height={62} objectFit="cover" layout="responsive" />
+                        <Image src={'/images/kryptocards/logo.svg'} className={Styles.image2} width={"100%"} height={62} objectFit="cover" layout="responsive" />
                     </div>
                 </div>
             </Container>

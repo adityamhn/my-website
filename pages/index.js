@@ -36,6 +36,7 @@ const Home = () => {
             <h1 className={Styles.myName}>Aditya Mohan.</h1>
             <h2 className={Styles.desig}>Web developer &</h2>
             <h2 className={Styles.desig}>UI/UX designer</h2>
+            <h2 className={Styles.fullDesig}>Web developer & UI/UX designer</h2>
           </div>
 
 
@@ -64,7 +65,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div onClick={() => router.push('/work/examtantra')} className={Styles.project3}>
-                    <Image src={"/images/examtantra/main.jpg"} className={Styles.previewimg3} alt="Project-3" width={"100%"} height={75} layout="responsive" objectFit="cover" />
+                    <Image src={"/images/examtantra/logo.svg"} className={Styles.previewimg3} alt="Project-3" width={"100%"} height={75} layout="responsive" objectFit="cover" />
                     <div className={Styles.projectDetails} >
                       <div className={Styles.proName}>Exam tantra</div>
                       <div className={Styles.typeOfWork}>App development</div>
@@ -85,7 +86,7 @@ const Home = () => {
 
 
           <Row className={Styles.infoSec}>
-            <Col xs={9} className={Styles.info1}>
+            <Col lg={9} className={Styles.info1}>
               <h5 className={Styles.heading}>Ideate <svg className={Styles.triangle} width="30" height="30" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.9322 19.2353L13 3.52941L22.0678 19.2353H3.9322Z" stroke="#F3F3F3" strokeWidth="3.52941" />
               </svg>
@@ -105,7 +106,7 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={3} className={Styles.info2}>
+            <Col lg={3} className={Styles.info2}>
               I love to build something clean and simple
             </Col>
             <Link href="/about">

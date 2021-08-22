@@ -1,8 +1,17 @@
 .footerContainer {
     background: #17181b;
+    padding:0;
 
     .footerWrapper {
         padding: 18rem 5rem 5rem 5rem;
+
+        @media only screen and (max-width: 1036px) {
+            padding: 16rem 3rem 4rem 3rem;
+        }
+
+        @media only screen and (max-width: 789px) {
+            padding: 12rem 1.5rem 4rem 1.5rem;
+        }
 
         .mailInfo {
             display: flex;
@@ -12,14 +21,36 @@
                 color: #e5e5e5;
                 font-size: 1.2rem;
                 font-family: "BasisGrotesquePro-light";
-                line-height: 0;
+                line-height: 10px;
+
+                @media only screen and (max-width: 855px) {
+                    font-size:1rem;
+                }
+
+                @media only screen and (max-width: 470px) {
+                    font-size:0.8rem;
+                }
             }
+
 
             .mail {
                 font-size: 3rem;
                 color: #f3f3f3;
                 cursor: pointer;
                 text-decoration: none;
+
+
+                @media only screen and (max-width: 855px) {
+                    font-size:2rem;
+                }
+
+                @media only screen and (max-width: 470px) {
+                    font-size:1.5rem;
+                }
+
+                @media only screen and (max-width: 330px) {
+                    font-size:1.2rem;
+                }
             }
         }
 
@@ -39,6 +70,14 @@
                     font-size: 2rem;
                     cursor: pointer;
                     text-decoration: none;
+
+                    @media only screen and (max-width: 855px) {
+                        font-size:1.5rem;
+                    }
+
+                    @media only screen and (max-width: 470px) {
+                        font-size:1.1rem;
+                    }
                 }
             }
 
@@ -52,6 +91,14 @@
                     text-align: right;
                     cursor: pointer;
                     text-decoration: none;
+
+                    @media only screen and (max-width: 855px) {
+                        font-size:1.5rem;
+                    }
+
+                    @media only screen and (max-width: 470px) {
+                        font-size:1.1rem;
+                    }
                 }
 
                 .activeFootLink {

@@ -46,7 +46,7 @@ const Work = () => {
                   </div>
                 </div>
                 <div onClick={() => router.push('/work/examtantra')} className={Styles.project3}>
-                  <Image src={"/images/examtantra/main.jpg"} className={Styles.previewimg3} alt="Project-3" width={"100%"} height={75} layout="responsive" objectFit="cover" />
+                  <Image src={"/images/examtantra/logo.svg"} className={Styles.previewimg3} alt="Project-3" width={"100%"} height={75} layout="responsive" objectFit="cover" />
                   <div className={Styles.projectDetails} >
                     <div className={Styles.proName}>Exam tantra</div>
                     <div className={Styles.typeOfWork}>App development</div>

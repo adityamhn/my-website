@@ -7,6 +7,7 @@
     left: 0;
     z-index: 99;
     transition: all 0.5s ease;
+    padding: 0rem;
 
     .wrapper {
         height: 64px;
@@ -16,8 +17,20 @@
         align-items: center;
         padding: 0rem 6rem;
 
+        @media only screen and (max-width: 975px) {
+            padding: 0rem 4rem;
+        }
+
+        @media only screen and (max-width: 570px) {
+            padding: 0rem 1.3rem;
+        }
+
         .mainNav {
             transition: all 0.3s ease;
+            
+            @media only screen and (max-width: 570px) {
+                display:none;
+            }
 
             .navLink {
                 margin-left: 4rem;
@@ -26,6 +39,10 @@
                 text-decoration: none;
                 font-size: 1.1rem;
                 font-family: "BasisGrotesquePro";
+
+                @media only screen and (max-width: 775px) {
+                    margin-left: 2.5rem;
+                }
             }
 
             .activeLink {
@@ -44,6 +61,76 @@
                 }
             }
         }
+
+        .hamSec {
+            display: none;
+
+            @media only screen and (max-width: 570px) {
+                display:block;
+            }
+
+            .ham {
+                color:#f3f3f3;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
+
+
+
+.sidebarContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 100;
+
+    .closeSec {
+        height: 64px;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0rem 1.3rem;
+
+
+        .close {
+            font-size:1.7rem;
+            cursor: pointer;
+
+        }
+    }
+
+    .sidebarWrapper {
+        padding-top: 2rem;
+
+        .mainNav {
+           display:flex;
+           flex-direction:column;
+           align-items:center;
+
+            .navLink {
+                position: relative;
+                color: #5d5d5d;
+                text-decoration: none;
+                font-size: 2.5rem;
+                font-family: "BasisGrotesquePro";
+                margin: 0.6rem 0rem;
+
+
+            }
+
+            .activeLink {
+                color: #111;
+           
+            }
+        }
+        
     }
 }
 
