@@ -1,24 +1,58 @@
 .bugbaseContainer {
     background: #17181b;
     min-height: 100vh;
+    padding:0;
     padding-top: 64px;
 
     .wrapper {
         padding: 0rem 5rem;
 
+        @media only screen and (max-width: 1036px) {
+            padding: 0rem 4rem;
+        }
+
+        @media only screen and (max-width: 789px) {
+            padding: 0rem 1.5rem;
+        }
+
         .introduction {
             color: #f3f3f3;
             padding-top: 6rem;
             font-size: 2.2rem;
+
+            @media only screen and (max-width: 901px) {
+                font-size: 1.8rem;
+            }
+
+            @media only screen and (max-width: 525px) {
+                font-size: 1.5rem;
+            }
         }
 
         .introPicSec {
             padding-top: 8rem;
+            height:100%;
 
-            .introPic {
-                width: 100% !important;
-                height: 44rem !important;
+            @media only screen and (max-width: 901px) {
+                padding-top: 6rem;
             }
+
+            @media only screen and (max-width: 525px) {
+                padding-top: 4rem;
+            }
+
+            .playerWrapper {
+                position: relative;
+                padding-top: 56.25%; 
+                .introVid {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+    
+            
+                }
+            }
+
         }
 
         .startInformationSec {
@@ -28,9 +62,27 @@
             align-items: center;
             padding-top: 8rem;
 
+            @media only screen and (max-width: 901px) {
+                padding-top: 6rem;
+            }
+            
+            @media only screen and (max-width: 816px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            @media only screen and (max-width: 525px) {
+                padding-top: 4rem;
+            }
+
+
             .linkAndDate {
                 display: flex;
                 flex-direction: column;
+
+                @media only screen and (max-width: 816px) {
+                    margin-bottom: 2rem;
+                }
 
                 .linkSec {
                     padding: 1rem 0rem;
@@ -38,10 +90,23 @@
                         color: #f3f3f3;
                         font-size: 1.5rem;
                         text-decoration: none;
+
+                        @media only screen and (max-width: 901px) {
+                            font-size: 1.25rem;
+                        }
+        
+            
+                        @media only screen and (max-width: 525px) {
+                            font-size: 1.05rem;
+                        }
                     }
 
                     .webText {
                         color: #bdbdbd;
+
+                        @media only screen and (max-width: 525px) {
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
@@ -50,11 +115,31 @@
                 width: 60%;
                 font-size: 1.25rem;
                 color: #d3d3d3;
+
+                @media only screen and (max-width: 901px) {
+                    font-size: 1.1rem;
+                }
+
+                @media only screen and (max-width: 816px) {
+                    width: 100%;
+                }
+    
+                @media only screen and (max-width: 525px) {
+                    font-size: 1rem;
+                }
             }
         }
 
         .image2Sec {
             padding-top: 8rem;
+
+            @media only screen and (max-width: 901px) {
+                padding-top: 6rem;
+            }
+
+            @media only screen and (max-width: 525px) {
+                padding-top: 4rem;
+            }
 
             .image2 {
             }
@@ -65,10 +150,30 @@
             justify-content: flex-end;
             padding-top: 8rem;
 
+            @media only screen and (max-width: 901px) {
+                padding-top: 6rem;
+            }
+
+            @media only screen and (max-width: 525px) {
+                padding-top: 4rem;
+            }
+
             .info2 {
                 width: 60%;
                 font-size: 1.25rem;
                 color: #d3d3d3;
+
+                @media only screen and (max-width: 901px) {
+                    font-size: 1.1rem;
+                }
+
+                @media only screen and (max-width: 816px) {
+                    width: 100%;
+                }
+    
+                @media only screen and (max-width: 525px) {
+                    font-size: 1rem;
+                }
 
                 .info2Title {
                     padding-bottom: 1.7rem;
@@ -76,6 +181,16 @@
                     font-family: 'BasisGrotesquePro-light';
                     // text-transform: uppercase;
                     font-size: 1.5rem;
+
+                    @media only screen and (max-width: 901px) {
+                        font-size: 1.25rem;
+                    }
+    
+        
+                    @media only screen and (max-width: 525px) {
+                        font-size: 1.05rem;
+                        padding-bottom:1.1rem;
+                    }
 
                 }
             }

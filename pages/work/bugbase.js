@@ -25,12 +25,15 @@ const Bugbase = () => {
                             Bugbase is india’s first consolidated bugbounty platform where companies can setup their bugbounty program that can be reached out by ethical hackers and security enthusiasts all over the country.
                         </div>
                         <div className={Styles.introPicSec}>
+                            <div className={Styles.playerWrapper}>
                             <ReactPlayer
                                 url="https://www.youtube.com/watch?v=4kWZn4xY2hI"
-                                className={Styles.introPic}
+                                className={Styles.introVid}
+                                width={"100%"} height={"100%"}
                                 playing={true} muted={true}
                                 controls={true}
                             />
+                            </div>
                         </div>
                         <div className={Styles.startInformationSec}>
                             <div className={Styles.linkAndDate}>

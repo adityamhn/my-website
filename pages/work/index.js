@@ -26,8 +26,7 @@ const Work = () => {
           <div className={Styles.wrapper}>
             <h3 className={Styles.workHeading}>My works</h3>
             <div className={Styles.allWorks}>
-
-              <Row className={Styles.projectBlock1}>
+              <Row className={Styles.project}>
                 <Col sm={8} className={Styles.block1}>
                   <div onClick={() => router.push('/work/bugbase')} className={Styles.project1}>
                     <Image src={"/images/bugbase/main.svg"} className={Styles.previewimg1} alt="Project-1" width={"100%"} height={75} layout="responsive" objectFit="cover" />
