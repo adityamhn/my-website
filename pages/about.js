@@ -10,6 +10,8 @@ const About = () => {
     <div>
       <Head>
         <title>About | Aditya Mohan</title>
+        <meta property="og:image" content="%PUBLIC_URL%/screenshot.png" />
+        <meta name="description" content=" I am a web developer and UI/UX designer working from Vizag, India. Currently the CTO of Bugbase and CTO of Kryptocards." />
       </Head>
       <Navbar />
       <Container fluid className={Styles.aboutContainer}>
