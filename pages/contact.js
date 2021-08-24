@@ -9,7 +9,7 @@ const Contact = () => {
     <div>
       <Head>
         <title>Contact | Aditya Mohan</title>
-        <meta property="og:image" content="%PUBLIC_URL%/screenshot.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/adityamhn/image/upload/v1629784188/Screenshot_2021-08-24_at_10.52.18_AM_tob60s.png" />
         <meta name="description" content=" I am a web developer and UI/UX designer working from Vizag, India. Currently the CTO of Bugbase and CTO of Kryptocards." />
       </Head>
       <Navbar />
