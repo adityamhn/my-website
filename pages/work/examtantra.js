@@ -41,10 +41,10 @@ const Examtantra = () => {
                             </div>
                             <div className={Styles.startInfo}>
                                 <p className="m-0">
-                                    Competitive exams are a cornerstone in almost every student’s life. However the archaic education system makes the preparation process very tedious, boring and unintuitive. This leads to burnout and a general disinterest towards academics. This system is also inefficient as it doesn’t have room for a dynamic system of preparation.
+                                Competitive exams are a cornerstone in almost every student’s life. However, the archaic education system makes the preparation process very tedious, boring and unintuitive. This leads to burnout and a general disinterest in academics. This system is also inefficient as it doesn’t have room for a dynamic method of preparation.
                                 </p>
                                 <p className="pt-4">
-                                    ExamTantra’s “Gamifies” this mundane tasks of attempting exams by adding elements such as peer attempts: solving papers with peers resulting in a more productive practice environment, leaderboards to compare progress, a clean minimal UI so as to not distract the user, badges, awards and other reinforcements which have been proven to be psychological motivators.
+                                ExamTantra’s “Gamifies” this mundane tasks of attempting exams by adding elements such as peer attempts: solving papers with peers resulting in a more productive practice environment, leaderboards to compare progress, a clean minimal UI not to distract the user, badges, awards and other reinforcements which have proven to be psychological motivators.
                                 </p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ const Examtantra = () => {
                             <div className={Styles.info2}>
                                 <h5 className={Styles.info2Title}>My Role</h5>
                                 <p className="m-0">
-                                    ExamTantra was a project we made for a hackathon where we won the first runner-up. The entire team was working together for the first time, so we did not have a common tech stack. We decided to try out something completely new to all of us, ie. Ionic with React as the frontend. I was one most familiar with React at the time, so I mostly worked on building the frontend of the App. We decided to go with firebase cloud functions as the backend since we had a time restriction to submit the project.
+                                ExamTantra was a project we made for a hackathon where we won the first runner-up. The entire team worked together for the first time, so we did not have a standard tech stack. We decided to try out something entirely new for all of us, ie. Ionic with React as the frontend. I was one most familiar with React at the time, so I mostly worked on building the frontend of the App. We decided to go with firebase cloud functions as the backend since we had a time restriction to submit the project.
                                 </p>
                             </div>
                         </div>

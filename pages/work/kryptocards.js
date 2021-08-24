@@ -43,7 +43,7 @@ const Kryptocards = () => {
                             </div>
                             <div className={Styles.startInfo}>
                                 <p className="m-0">
-                                    Krypto Cards puts on display collectible cards in the form of NFTs for you to buy. We are revolutionising the legacy of collecting physical cards into a digital one which will awaken the fan within you. Krypto Cards is one of the very first Ethereum based NFT platform in India. Krypto Cards ties up with renowned artist and sell thier NFTs on the ethereum blockchain.
+                                    Krypto Cards puts on display collectable cards in the form of NFTs for you to buy. We are revolutionising the legacy of collecting physical cards into a digital one that will awaken the fan within you. Krypto Cards is one of the very first Ethereum based NFT platforms in India. Krypto Cards ties up with renowned artist and sell their NFTs on the ethereum blockchain.
                                 </p>
 
                             </div>
@@ -55,7 +55,7 @@ const Kryptocards = () => {
                             <div className={Styles.info2}>
                                 <h5 className={Styles.info2Title}>My Role</h5>
                                 <p className="m-0">
-                                    I am the Chief technology officer ( CTO ) of KryptoCards maintaining the website and other technical work of Kryptocards. My major work was to Research, wireframe, design and build the website. Kryptocards is built using Nodejs and React for backend and frontend respectively and also has its own smart contract.
+                                    I am the Chief technology officer ( CTO ) of KryptoCards, maintaining the website and other technical work of Kryptocards. My primary job was to research, wireframe, design and build the website. Kryptocards is built using Nodejs and React for backend and frontend, respectively. It also has its own smart contract.
                                 </p>
                             </div>
                         </div>
@@ -63,10 +63,10 @@ const Kryptocards = () => {
                             <div className={Styles.info2}>
                                 <h5 className={Styles.info2Title}>Research, Design and Insights</h5>
                                 <p className="m-0">
-                                    In the Research Phase, I went through all the needs that the website needs to fulfill and defined a problem statement. Then, I started researching on the target audience and since most of our audience are NFT enthusiasts and art lovers, I decided to go with a clean, minimal and visually pleasing design. I tried different color palettes with good color contrasts.
+                                    In the Research Phase, I went through all the website needs and defined a problem statement. Then, I started researching the target audience. Since most of our audience are NFT enthusiasts and art lovers, I decided to go with a clean, minimal and visually pleasing design. I tried different colour palettes with good colour contrasts.
                                 </p>
                                 <p className="mt-4">
-                                    Then I focused on branding and logo design, tried different types of logos and finally decided upon one after having a good discussion with the team. Then I created my workspace and started working on the wireframes and develpoing visual mockups.
+                                    Then I focused on branding and logo design, tried different types of logos and finally decided upon one after having a good discussion with the team. Then I created my workspace and started working on the wireframes, developing visual mockups and building the website.
                                 </p>
                             </div>
                         </div>

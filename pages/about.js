@@ -20,17 +20,17 @@ const About = () => {
         >
           <div className={Styles.aboutWrapper}>
             <p className={Styles.about1}>
-              My name is Aditya Mohan. Iam a Full Stack Web developer & UI/UX designer based in Vizag, India. Im currently pursuing my under graduate degree from Manipal institute of technology, Manipal. I love to build and break things and Im currently trying to make internet a beautiful place.
+              My name is Aditya Mohan. I am a Full Stack Web developer & UI/UX designer based in Vizag, India. I'm currently pursuing my undergraduate degree from Manipal institute of technology, Manipal. I love to make artistic designs and try out new tech.
             </p>
             <div className={Styles.about2}>
               <p className={Styles.text2}>
-                I started out web development in 2019 as fun but really loved it. Since then, i started building websites and also learned web design.
+                I started learning web development in 2019 as fun and loved it. Since then, I started building websites and also learned web design along the way.
               </p>
               <p className={Styles.text2}>
-                Through the years of learning web development and design i found that visually clean and minimal websites tend to gain more trust from users than a complex website with no interactivity.
+                Through the years of learning web development and design, I found that visually clean and minimal websites tend to gain more trust from users than a complex website with no interactivity.
               </p>
               <p className={Styles.text2}>
-                Adding interactive functionality to the websites with a minimal and clean design is my key to building websites with great user experience.
+                Adding interactive functionality to the websites with a minimal and clean design is my key to building websites with a great user experience.
               </p>
             </div>
             <div className={Styles.techSkills}>
