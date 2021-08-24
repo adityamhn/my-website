@@ -1,0 +1,31 @@
+.errorContainer {
+    background: #17181b;
+    min-height: 100vh;
+    padding: 0;
+
+    .wrapper {
+        padding: 3rem 5rem;
+
+        @media only screen and (max-width: 1036px) {
+            padding: 3rem 4rem;
+        }
+
+        @media only screen and (max-width: 789px) {
+            padding: 3rem 1.5rem;
+        }
+
+        .homeBtn {
+            color: #e5e5e5;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 2rem;
+            cursor: pointer;
+
+            @media only screen and (max-width: 789px) {
+                font-size: 1.2rem;
+            }
+    
+           
+        }
+    }
+}
