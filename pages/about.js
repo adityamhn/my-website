@@ -20,7 +20,7 @@ const About = () => {
         >
           <div className={Styles.aboutWrapper}>
             <p className={Styles.about1}>
-              My name is Aditya Mohan. I am a Full Stack Web developer & UI/UX designer based in Vizag, India. I'm currently pursuing my undergraduate degree from Manipal institute of technology, Manipal. I love to make artistic designs and try out new tech.
+              My name is Aditya Mohan. I am a Full Stack Web developer & UI/UX designer based in Vizag, India. {"I'm"} currently pursuing my undergraduate degree from Manipal institute of technology, Manipal. I love to make artistic designs and try out new tech.
             </p>
             <div className={Styles.about2}>
               <p className={Styles.text2}>
