@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap"
 import Image from 'next/image'
 import Styles from '../styles/pages/error.module.scss'
 import Head from "next/head"
+import Link from "next/link"
 
 const Error = () => {
     return (
@@ -14,7 +15,9 @@ const Error = () => {
             <Container fluid className={Styles.errorContainer}>
                 <div className={Styles.wrapper}>
                     <Image src="/images/error.gif" width="45" height="30" layout="responsive" objectFit="contain" />
-                    <div className={Styles.homeBtn}>Go to home</div>
+                    <Link href="/">
+                        <div className={Styles.homeBtn}>Go to home</div>
+                    </Link>
                 </div>
             </Container>
         </div>
