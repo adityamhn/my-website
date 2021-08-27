@@ -18,6 +18,7 @@ const Footer = () => {
                 <div className={Styles.otherLinks}>
                     <div className={Styles.socials}>
                         <a href="https://www.linkedin.com/in/aditya-mohan-6a506b1b2/" target="_blank" rel="noreferrer" className={Styles.socialLink}>LinkedIn</a>
+                        <a href="https://dribbble.com/adityamhn" target="_blank" rel="noreferrer" className={Styles.socialLink}>Dribbble</a>
                         <a href="https://www.instagram.com/aditya_peela/" target="_blank" rel="noreferrer" className={Styles.socialLink}>Instagram</a>
                     </div>
                     <div className={Styles.linksSec}>
