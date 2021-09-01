@@ -5,13 +5,18 @@ import Navbar from "../../components/Navbar"
 import Image from 'next/image'
 import Head from 'next/head'
 import { useRouter } from "next/router"
+import { motion } from "framer-motion"
 
 const Work = () => {
   const router = useRouter()
 
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}>
       <Head>
         <title>Work | Aditya Mohan</title>
         <meta property="og:image" content="https://res.cloudinary.com/adityamhn/image/upload/v1629784188/Screenshot_2021-08-24_at_10.52.18_AM_tob60s.png" />
@@ -55,7 +60,7 @@ const Work = () => {
         </div>
       </Container>
       <Footer />
-    </div>
+    </motion.div>
 
   )
 }
