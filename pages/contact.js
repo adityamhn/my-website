@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap"
 import Styles from '../styles/pages/contact.module.scss'
 import Navbar from "../components/Navbar"
 import Head from 'next/head'
-import { motion } from "framer-motion"
 
 const Contact = () => {
   return (
@@ -14,11 +13,7 @@ const Contact = () => {
       </Head>
       <Navbar />
       <Container fluid className={Styles.contactContainer}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
+        <div>
           <div className={Styles.wrapper}>
             <h4 className={Styles.header}>Lets work together</h4>
             <div className={Styles.mailSec}>
@@ -33,7 +28,7 @@ const Contact = () => {
               <a href="https://www.instagram.com/aditya_peela/" target="_blank" rel="noreferrer" className={Styles.socialLink}>Instagram</a>
             </div>
           </div>
-        </motion.div>
+        </div>
       </Container>
     </div>
   )

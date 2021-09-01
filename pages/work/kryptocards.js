@@ -2,10 +2,8 @@ import { Container } from "react-bootstrap"
 import Footer from "../../components/Footer"
 import Navbar from "../../components/Navbar"
 import Styles from '../../styles/pages/bugbase.module.scss'
-import ReactPlayer from 'react-player/youtube'
 import Image from 'next/image'
 import Head from 'next/head'
-import { motion } from "framer-motion"
 
 const Kryptocards = () => {
 
@@ -19,11 +17,7 @@ const Kryptocards = () => {
             </Head>
             <Navbar />
             <Container fluid className={Styles.bugbaseContainer}>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                >
+                <div>
                     <div className={Styles.wrapper}>
                         <div className={Styles.introduction}>
                             Kryptocards is a ethereum based NFT platform that sells unique digital NFTs.
@@ -76,7 +70,7 @@ const Kryptocards = () => {
                             <Image src={'/images/kryptocards/logo.svg'} className={Styles.image2} width={"100%"} height={62} objectFit="cover" layout="responsive" />
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </Container>
             <Footer />
         </div>

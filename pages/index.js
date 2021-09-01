@@ -7,7 +7,6 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 import Footer from "../components/Footer"
 import Link from 'next/link'
 import { useRouter } from "next/router"
-import { motion } from "framer-motion"
 
 
 
@@ -24,10 +23,7 @@ const Home = () => {
       </Head>
       <Navbar />
       <Container fluid className={Styles.homeContainer} >
-        <motion.div initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          // exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}>
+        <div >
 
           <div className={Styles.homeWrapper}>
 
@@ -118,7 +114,7 @@ const Home = () => {
 
 
           </div>
-        </motion.div>
+        </div>
       </Container>
       <Footer />
     </div>

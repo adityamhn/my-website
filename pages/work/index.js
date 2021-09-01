@@ -5,7 +5,6 @@ import Navbar from "../../components/Navbar"
 import Image from 'next/image'
 import Head from 'next/head'
 import { useRouter } from "next/router"
-import { motion } from "framer-motion"
 
 const Work = () => {
   const router = useRouter()
@@ -20,11 +19,7 @@ const Work = () => {
       </Head>
       <Navbar />
       <Container fluid className={Styles.workContainer}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
+        <div>
           <div className={Styles.wrapper}>
             <h3 className={Styles.workHeading}>My works</h3>
             <div className={Styles.allWorks}>
@@ -57,7 +52,7 @@ const Work = () => {
               </Row>
             </div>
           </div>
-        </motion.div>
+        </div>
       </Container>
       <Footer />
     </div>

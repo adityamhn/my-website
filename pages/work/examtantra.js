@@ -4,7 +4,6 @@ import Navbar from "../../components/Navbar"
 import Styles from '../../styles/pages/bugbase.module.scss'
 import Image from 'next/image'
 import Head from 'next/head'
-import { motion } from "framer-motion"
 
 const Examtantra = () => {
     return (
@@ -16,11 +15,7 @@ const Examtantra = () => {
             </Head>
             <Navbar />
             <Container fluid className={Styles.bugbaseContainer}>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                >
+                <div>
                     <div className={Styles.wrapper}>
                         <div className={Styles.introduction}>
                             ExamTantra is a platform that Gamify the mundane tasks of attempting exams by bringing more productive practice environment to the students.
@@ -71,7 +66,7 @@ const Examtantra = () => {
                             <Image src={'/images/examtantra/splash.svg'} className={Styles.image2} width={"100%"} height={90} objectFit="cover" layout="responsive" />
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </Container>
             <Footer />
         </div>

@@ -3,7 +3,6 @@ import Styles from '../styles/pages/about.module.scss'
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Head from 'next/head'
-import { motion } from "framer-motion"
 import Image from "next/image"
 
 const About = () => {
@@ -16,11 +15,7 @@ const About = () => {
       </Head>
       <Navbar />
       <Container fluid className={Styles.aboutContainer}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
+        <div>
           <div className={Styles.aboutWrapper}>
             <p className={Styles.about1}>
               My name is Aditya Mohan. I am a Full Stack Web developer & UI/UX designer based in Vizag, India. {"I'm"} currently pursuing my undergraduate degree from Manipal institute of technology, Manipal. I love to make artistic designs and try out new tech.
@@ -140,7 +135,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </Container>
       <Footer />
     </div>

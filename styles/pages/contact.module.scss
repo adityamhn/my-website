@@ -2,14 +2,14 @@
     background: #17181b;
     padding: 0;
     padding-top: 64px;
-    min-height:100vh;
+    min-height: 100vh;
 
     .wrapper {
-        padding:4rem 5rem;
+        padding: 4rem 5rem;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: space-between;
-        min-height:calc(100vh - 64px);
+        min-height: calc(100vh - 64px);
 
         @media only screen and (max-width: 1036px) {
             padding: 4rem 3rem;
@@ -38,7 +38,6 @@
         }
 
         .mailSec {
-
             .text {
                 color: #e5e5e5;
                 font-size: 1.2rem;
@@ -74,12 +73,11 @@
             }
         }
 
-
         .socials {
             align-self: flex-end;
             display: flex;
-            flex-direction:column;
-            
+            flex-direction: column;
+
             .socialLink {
                 color: #e5e5e5;
                 font-size: 2rem;
@@ -93,7 +91,6 @@
                 @media only screen and (max-width: 470px) {
                     font-size: 1.1rem;
                 }
-
             }
         }
     }

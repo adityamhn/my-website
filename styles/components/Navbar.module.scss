@@ -27,9 +27,9 @@
 
         .mainNav {
             transition: all 0.3s ease;
-            
+
             @media only screen and (max-width: 570px) {
-                display:none;
+                display: none;
             }
 
             .navLink {
@@ -46,7 +46,6 @@
             }
 
             .activeLink {
-                
                 &::before {
                     animation: fade 1s linear;
                     content: "";
@@ -66,21 +65,17 @@
             display: none;
 
             @media only screen and (max-width: 570px) {
-                display:block;
+                display: block;
             }
 
             .ham {
-                color:#f3f3f3;
+                color: #f3f3f3;
                 font-size: 1.5rem;
                 cursor: pointer;
             }
         }
     }
-
-
 }
-
-
 
 .sidebarContainer {
     position: fixed;
@@ -93,16 +88,14 @@
 
     .closeSec {
         height: 64px;
-        display:flex;
+        display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 0rem 1.3rem;
 
-
         .close {
-            font-size:1.7rem;
+            font-size: 1.7rem;
             cursor: pointer;
-
         }
     }
 
@@ -110,9 +103,9 @@
         padding-top: 2rem;
 
         .mainNav {
-           display:flex;
-           flex-direction:column;
-           align-items:center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .navLink {
                 position: relative;
@@ -121,16 +114,12 @@
                 font-size: 2.5rem;
                 font-family: "BasisGrotesquePro";
                 margin: 0.6rem 0rem;
-
-
             }
 
             .activeLink {
                 color: #111;
-           
             }
         }
-        
     }
 }
 
