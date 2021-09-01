@@ -1,9 +1,10 @@
-import { Container } from "react-bootstrap"
+import { Container, OverlayTrigger } from "react-bootstrap"
 import Styles from '../styles/pages/about.module.scss'
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Head from 'next/head'
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const About = () => {
   return (
@@ -41,28 +42,100 @@ const About = () => {
               </h5>
               <div className={Styles.skills}>
                 <div className={Styles.skillBlock}>
-                  <div className={Styles.skill}>Reactjs</div>
-                  <div className={Styles.skill}>Express</div>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/react.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Reactjs</div>
+                  </OverlayTrigger>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/express.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Express</div>
+                  </OverlayTrigger>
                 </div>
                 <div className={Styles.skillBlock}>
-                  <div className={Styles.skill}>HTML</div>
-                  <div className={Styles.skill}>Figma</div>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/html.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>HTML</div>
+                  </OverlayTrigger>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/figma.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Figma</div>
+                  </OverlayTrigger>
                 </div>
                 <div className={Styles.skillBlock}>
-                  <div className={Styles.skill}>CSS/SCSS</div>
-                  <div className={Styles.skill}>Adobe XD</div>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/css.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>CSS/SCSS</div>
+                  </OverlayTrigger>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/xd.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Adobe XD</div>
+                  </OverlayTrigger>
                 </div>
                 <div className={Styles.skillBlock}>
-                  <div className={Styles.skill}>Javascript</div>
-                  <div className={Styles.skill}>Illustrator</div>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/js.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Javascript</div>
+                  </OverlayTrigger>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/illustrator.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Illustrator</div>
+                  </OverlayTrigger>
                 </div>
                 <div className={Styles.skillBlock}>
-                  <div className={Styles.skill}>Nextjs</div>
-                  <div className={Styles.skill}>Flutter</div>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/next.svg"} width={"80px"} height={"80px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Nextjs</div>
+                  </OverlayTrigger>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/flutter.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Flutter</div>
+                  </OverlayTrigger>
                 </div>
                 <div className={Styles.skillBlock}>
-                  <div className={Styles.skill}>Nodejs</div>
-                  <div className={Styles.skill}>Python</div>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/node.svg"} width={"80px"} height={"80px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Nodejs</div>
+                  </OverlayTrigger>
+                  <OverlayTrigger trigger="hover" placement="top" overlay={
+                    <div>
+                      <Image src={"/images/tech/python.svg"} width={"60px"} height={"60px"} />
+                    </div>
+                  }>
+                    <div className={Styles.skill}>Python</div>
+                  </OverlayTrigger>
                 </div>
               </div>
             </div>
