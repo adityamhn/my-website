@@ -35,6 +35,11 @@
 
             .project {
                 margin-bottom: 6px !important;
+
+
+                @media only screen and (max-width: 726px) {
+                    margin-bottom: 0 !important;
+                }
                 .block1 {
                     padding: 0;
 
@@ -60,9 +65,6 @@
                             cursor: pointer;
                             transition: all 0.5s ease;
 
-                            @media only screen and (max-width: 726px) {
-                                padding-right: 0 !important;
-                            }
                         }
 
                         .projectDetails {
