@@ -34,6 +34,7 @@
             margin-top: 1rem;
 
             .project {
+                margin-bottom: 6px !important;
                 .block1 {
                     padding: 0;
 
@@ -44,6 +45,17 @@
 
                         .previewimg1 {
                             padding-right: 3px !important;
+                            object-fit: cover;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+
+                            @media only screen and (max-width: 726px) {
+                                padding-right: 0 !important;
+                            }
+                        }
+
+
+                        .previewimg4 {
                             object-fit: cover;
                             cursor: pointer;
                             transition: all 0.5s ease;

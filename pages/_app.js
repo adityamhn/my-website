@@ -4,6 +4,11 @@ import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
 import { useEffect } from 'react';
 import { AnimatePresence } from "framer-motion";
+import dynamic from 'next/dynamic'
+
+const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+  ssr: false
+});
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -57,6 +62,14 @@ function MyApp({ Component, pageProps }) {
 
   return (<>
     <AnimatePresence exitBeforeEnter={true} onExitComplete={onExit}>
+    <AnimatedCursor
+      innerSize={8}
+      outerSize={28}
+      color='255, 255, 255'
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={2.5}
+    />
       <Component key={router.route} {...pageProps} />
     </AnimatePresence>
   </>
