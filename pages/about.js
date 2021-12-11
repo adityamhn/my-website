@@ -115,10 +115,10 @@ const About = () => {
                   </OverlayTrigger>
                   <OverlayTrigger trigger="hover" placement="top" overlay={
                     <div>
-                      <Image src={"/images/tech/flutter.svg"} width={"60px"} height={"60px"} />
+                      <Image src={"/images/tech/react-native.svg"} width={"60px"} height={"60px"} />
                     </div>
                   }>
-                    <div className={Styles.skill}>Flutter</div>
+                    <div className={Styles.skill}>React Native</div>
                   </OverlayTrigger>
                 </div>
                 <div className={Styles.skillBlock}>
