@@ -52,26 +52,32 @@ const Home = () => {
                   <Col sm={8} className={Styles.block1}>
                     <div onClick={() => router.push('/work/bugbase')} className={Styles.project1}>
                       <Image src={"/images/bugbase/main.svg"} className={Styles.previewimg1} alt="Project-1" width={"100%"} height={75} layout="responsive" objectFit="cover" />
-                      <div className={Styles.projectDetails} >
-                        <div className={Styles.proName}>Bugbase</div>
-                        <div className={Styles.typeOfWork}>Web development</div>
-                      </div>
+                      <a>
+                        <div className={Styles.projectDetails} >
+                          <div className={Styles.proName}>Bugbase</div>
+                          <div className={Styles.typeOfWork}>Web development</div>
+                        </div>
+                      </a>
                     </div>
                   </Col>
                   <Col sm={4} className={Styles.block2}>
                     <div onClick={() => router.push('/work/kryptocards')} className={Styles.project2}>
                       <Image src={"/images/kryptocards/main.svg"} className={Styles.previewimg2} alt="Project-2" width={"100%"} height={75} layout="responsive" objectFit="cover" />
-                      <div className={Styles.projectDetails} >
-                        <div className={Styles.proName}>Kryptocards</div>
-                        <div className={Styles.typeOfWork}>Web development</div>
-                      </div>
+                      <a>
+                        <div className={Styles.projectDetails} >
+                          <div className={Styles.proName}>Kryptocards</div>
+                          <div className={Styles.typeOfWork}>Web development</div>
+                        </div>
+                      </a>
                     </div>
                     <div onClick={() => router.push('/work/examtantra')} className={Styles.project3}>
                       <Image src={"/images/examtantra/logo.svg"} className={Styles.previewimg3} alt="Project-3" width={"100%"} height={75} layout="responsive" objectFit="cover" />
-                      <div className={Styles.projectDetails} >
-                        <div className={Styles.proName}>Exam tantra</div>
-                        <div className={Styles.typeOfWork}>App development</div>
-                      </div>
+                      <a>
+                        <div className={Styles.projectDetails} >
+                          <div className={Styles.proName}>Exam tantra</div>
+                          <div className={Styles.typeOfWork}>App development</div>
+                        </div>
+                      </a>
                     </div>
                   </Col>
                 </Row>

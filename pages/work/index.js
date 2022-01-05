@@ -49,10 +49,12 @@ const Work = () => {
                       layout="responsive"
                       objectFit="cover"
                     />
-                    <div className={Styles.projectDetails}>
-                      <div className={Styles.proName}>Bugbase</div>
-                      <div className={Styles.typeOfWork}>Web development</div>
-                    </div>
+                    <a>
+                      <div className={Styles.projectDetails}>
+                        <div className={Styles.proName}>Bugbase</div>
+                        <div className={Styles.typeOfWork}>Web development</div>
+                      </div>
+                    </a>
                   </div>
                 </Col>
               </Row>
@@ -71,10 +73,12 @@ const Work = () => {
                       layout="responsive"
                       objectFit="cover"
                     />
-                    <div className={Styles.projectDetails}>
-                      <div className={Styles.proName}>Kryptocards</div>
-                      <div className={Styles.typeOfWork}>Web development</div>
-                    </div>
+                    <a>
+                      <div className={Styles.projectDetails}>
+                        <div className={Styles.proName}>Kryptocards</div>
+                        <div className={Styles.typeOfWork}>Web development</div>
+                      </div>
+                    </a>
                   </div>
                 </Col>
                 <Col sm={4} className={Styles.block2}>
@@ -91,10 +95,12 @@ const Work = () => {
                       layout="responsive"
                       objectFit="cover"
                     />
-                    <div className={Styles.projectDetails}>
-                      <div className={Styles.proName}>Mrex</div>
-                      <div className={Styles.typeOfWork}>App dev and UI/UX</div>
-                    </div>
+                    <a>
+                      <div className={Styles.projectDetails}>
+                        <div className={Styles.proName}>Mrex</div>
+                        <div className={Styles.typeOfWork}>App dev and UI/UX</div>
+                      </div>
+                    </a>
                   </div>
                   <div
                     onClick={() => router.push("/work/examtantra")}
@@ -109,10 +115,12 @@ const Work = () => {
                       layout="responsive"
                       objectFit="cover"
                     />
-                    <div className={Styles.projectDetails}>
-                      <div className={Styles.proName}>Exam tantra</div>
-                      <div className={Styles.typeOfWork}>App development</div>
-                    </div>
+                    <a>
+                      <div className={Styles.projectDetails}>
+                        <div className={Styles.proName}>Exam tantra</div>
+                        <div className={Styles.typeOfWork}>App development</div>
+                      </div>
+                    </a>
                   </div>
                 </Col>
               </Row>

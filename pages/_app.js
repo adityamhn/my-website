@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
@@ -62,14 +62,14 @@ function MyApp({ Component, pageProps }) {
 
   return (<>
     <AnimatePresence exitBeforeEnter={true} onExitComplete={onExit}>
-    <AnimatedCursor
-      innerSize={8}
-      outerSize={28}
-      color='255, 255, 255'
-      outerAlpha={0.2}
-      innerScale={0.7}
-      outerScale={2.5}
-    />
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={28}
+        color='255, 255, 255'
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={2.5}
+      />
       <Component key={router.route} {...pageProps} />
     </AnimatePresence>
   </>
