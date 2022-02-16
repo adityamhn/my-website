@@ -35,7 +35,7 @@ const Home = () => {
 
 
             <div className={Styles.heroSec}>
-              <h1 className={Styles.myName}>Aditya Mohan.</h1>
+              <h1 className={Styles.myName}>Aditya Mohan</h1>
               <h2 className={Styles.desig}>Web developer &</h2>
               <h2 className={Styles.desig}>UI/UX designer</h2>
               <h2 className={Styles.fullDesig}>Web developer & UI/UX designer</h2>
