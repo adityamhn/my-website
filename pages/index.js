@@ -109,9 +109,6 @@ const Home = () => {
                   <div className={Styles.text}>
                     I love to create great experiences for the user making sure they have seamless interactivity with the digital world.
                   </div>
-                  <div className={Styles.text}>
-                    I am currently a college student open to freelance work. Feel free to contact me. 😌
-                  </div>
                 </div>
               </Col>
               <Col lg={3} className={Styles.info2}>
