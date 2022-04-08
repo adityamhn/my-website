@@ -11,8 +11,8 @@ const Footer = () => {
                     <div className={Styles.text}>
                         Send me a hello.
                     </div>
-                    <a href="mailto:aditya530026@gmail.com" className={Styles.mail}>
-                        aditya530026@gmail.com
+                    <a href="mailto:aditya.mohan@bugbase.in" className={Styles.mail}>
+                        aditya.mohan@bugbase.in
                     </a>
                 </div>
                 <div className={Styles.otherLinks}>

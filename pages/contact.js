@@ -23,8 +23,8 @@ const Contact = () => {
             <h4 className={Styles.header}>Lets work together</h4>
             <div className={Styles.mailSec}>
               <div className={Styles.text}>send me a hello.</div>
-              <a href="mailto:aditya530026@gmail.com" className={Styles.mail}>
-                aditya530026@gmail.com
+              <a href="mailto:aditya.mohan@bugbase.in" className={Styles.mail}>
+                aditya.mohan@bugbase.in
               </a>
             </div>
             <div className={Styles.socials}>

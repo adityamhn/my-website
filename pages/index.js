@@ -104,7 +104,7 @@ const Home = () => {
                   Develop</h5>
                 <div className={Styles.infoText}>
                   <div className={Styles.text}>
-                    I am a web developer and UI/UX designer working from Vizag, India. Currently the <strong>Chief technology officer (CTO) of Bugbase.</strong>
+                    I am a web developer and UI/UX designer working from Vizag, India. Currently the <strong>Chief technology officer (CTO) at Bugbase.</strong>
                   </div>
                   <div className={Styles.text}>
                     I love to create great experiences for the user making sure they have seamless interactivity with the digital world.
